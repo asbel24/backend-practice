@@ -251,7 +251,10 @@ function eliminarDuplicados(arr) {
     if(arr[i]!==arr[i+1]){
       nuevoarray.push(arr[i]);
     }
-  }
+  }function esPalindromo(palabra) {
+  let variable = palabra.split("").reverse().join("");
+  return palabra === variable ? "es Palindromo" : "No es palindromo";
+}
 
   return nuevoarray;
    
