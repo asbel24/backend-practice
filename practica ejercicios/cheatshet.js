@@ -13,7 +13,7 @@ nums.forEach(num => console.log(num));
 
 const dobles = nums.map(num => num * 2); // [2, 4, 6]
 
-//filter
+//filter  me devuelve un arreglo con la condicion [2,4,6]
 
 const pares = nums.filter(num => num % 2 === 0); // [2]
 
@@ -22,7 +22,9 @@ const pares = nums.filter(num => num % 2 === 0); // [2]
 
 const suma = nums.reduce((ac, num) => ac + num, 0); // 6
 
-//find 
+
+
+//find me devuelve los numeros 3,5,.. que cumplen la condicion
 
 const mayorQueDos = nums.find(num => num > 2); // 3
 
@@ -37,6 +39,10 @@ console.log(nums.some(num => num > 2)); // true
 
 //every (todo debe cumplir )
 console.log(nums.every(num => num > 0)); // true
+
+// tambien se pued usar para 
+// arrayiguales = ["asds","asds","asds"]
+// ===================================
 
 nums.unshift(0); // [0,1,2,3]
 nums.shift();    // Elimina el 0
@@ -102,6 +108,21 @@ const combinado2 = { ...persona, ciudad: "Madrid" };
 console.log(combinado2)
 
 
+
+//agregar propiedad      objeto[property] = null;
+
+// invocar metodo        objeto[metodo]();
+
+
+// accder a akl propiedad   objetoMisterioso["numeroMisterioso"]
+
+// eliminar una prpiedad   delete objeto[unaPropiedad]
+
+
+//verifica si la propiedad existe  objeto.hasOwnProperty(propiedad);
+
+
+
 //****************************METODO MATH ********/
 
 
@@ -130,4 +151,10 @@ Math.min();
 
 console.log(Math.max(1, 3, 2)); // 3
 console.log(Math.min(1, 3, 2)); // 1
+
+//******************    CONVERTIR ******+ */
+
+// de nuemro a string  =    let numero =  n.toString()
+
+// de string a array   n.toString().split("")
 
