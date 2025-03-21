@@ -107,7 +107,12 @@ const clon = { ...persona };
 const combinado2 = { ...persona, ciudad: "Madrid" };
 console.log(combinado2)
 
+// ***************
+//
+// 
+//  OBJETOS
 
+// ***************
 
 //agregar propiedad      objeto[property] = null;
 
@@ -121,7 +126,29 @@ console.log(combinado2)
 
 //verifica si la propiedad existe  objeto.hasOwnProperty(propiedad);
 
+// array de objetos modificar valor de propiedad  usuarios[i]["esPremium"]=true
 
+
+  // agregar un metodo a un objeto 
+//   producto.calcularPrecioDescuento = function() {
+//     return this.precio - (this.precio * this.porcentajeDeDescuento);
+// };
+
+
+//**************   CLASES    ****** */
+
+
+class Usuario {
+    constructor(opciones) {
+        this.usuario = opciones.usuario;
+        this.nombre = opciones.nombre;
+        this.email = opciones.email;
+        this.password = opciones.password;
+    }
+        saludar() {
+            return `Hola, mi nombre es ${this.nombre}`;
+        }
+    }
 
 //****************************METODO MATH ********/
 

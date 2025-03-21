@@ -148,9 +148,9 @@ function empienzaConNueve(n) {
 //   //  n=12121212
 //   //n=9213212312
 
-  // una forma 
-  // let numero =  n.toString().split("")
-  //   return numero[0]==="9"?true:false;
+  //una forma 
+  let numero =  n.toString().split("")
+    return numero[0]==="9"?true:false;
 
   // // otra forma 
   // let numero =  n.toString().split("")
@@ -202,3 +202,14 @@ else {
 }
 
 console.log(mesesDelAño(["Enero", "Marzo", "Noviembre"]))
+
+
+
+
+
+
+
+console.log(diaDeLaSemana(7))
+
+
+console.log(empienzaConNueve(9356))
